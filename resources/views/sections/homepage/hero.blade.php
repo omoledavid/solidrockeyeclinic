@@ -7,7 +7,7 @@
                     <!-- Section Title Start -->
                     <div class="section-title">
                         <h3 class="wow fadeInUp">welcome to Solidrock eye specialist clinic</h3>
-                        <h1 class="text-anime-style-2" data-cursor="-opaque">Dental Care for the Whole Family</h1>
+                        <h1 class="text-anime-style-2" data-cursor="-opaque">Eye Care for the Whole Family</h1>
                         <p class="wow fadeInUp" data-wow-delay="0.25s">Your eyes deserve the best care. At Solid eye specialist clinic, we provide expert eye exams, advanced treatments, and personalized vision solutions to keep your sight sharp and healthy. Book your appointment today!</p>
                     </div>
                     <!-- Section Title End -->
