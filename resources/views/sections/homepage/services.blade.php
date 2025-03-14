@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <div class="service-body">
-                        <h3>teeth whitening</h3>
+                        <h3>eye cleaning</h3>
                         <p>We are excited to meet you and provide the best eye care for your family.</p>
                     </div>
                     <div class="read-more-btn">
