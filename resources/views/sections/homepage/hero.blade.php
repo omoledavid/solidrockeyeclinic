@@ -14,7 +14,7 @@
 
                     <!-- Hero Content Body Start -->
                     <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
-                        <a href="#" class="btn-default">make an appointment</a>
+                        <a href="{{route('book-appointment')}}" class="btn-default">make an appointment</a>
                     </div>
                     <!-- Hero Content Body End -->
 

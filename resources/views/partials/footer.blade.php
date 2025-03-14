@@ -53,7 +53,7 @@
                     <h3>contact us</h3>
                     <ul>
                         <li><a href="#">info@solidrockeyecare.com</a></li>
-                        <li><a href="#">+(123) 698-5245</a></li>
+                        <li><a href="#">+(234) 000-0000</a></li>
                     </ul>
                 </div>
                 <!-- Footer Contact Links End -->
