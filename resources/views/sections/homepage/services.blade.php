@@ -37,7 +37,7 @@
                 <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
                     <div class="icon-box">
                         <div class="img">
-                            <img src="{{ asset('assets/images/icon-services-2.svg')}}" alt="">
+                            <img src="{{ asset('assets/images/icon-services-1.svg')}}" alt="">
                         </div>
                     </div>
                     <div class="service-body">
@@ -56,11 +56,11 @@
                 <div class="service-item wow fadeInUp" data-wow-delay="0.5s">
                     <div class="icon-box">
                         <div class="img">
-                            <img src="{{ asset('assets/images/icon-services-3.svg')}}" alt="">
+                            <img src="{{ asset('assets/images/icon-services-1.svg')}}" alt="">
                         </div>
                     </div>
                     <div class="service-body">
-                        <h3>cosmetic dentistry</h3>
+                        <h3>cosmetic Eye</h3>
                         <p>We are excited to meet you and provide the best eye care for your family.</p>
                     </div>
                     <div class="read-more-btn">
@@ -75,7 +75,7 @@
                 <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
                     <div class="icon-box">
                         <div class="img">
-                            <img src="{{ asset('assets/images/icon-services-4.svg')}}" alt="">
+                            <img src="{{ asset('assets/images/icon-services-1.svg')}}" alt="">
                         </div>
                     </div>
                     <div class="service-body">
