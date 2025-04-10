@@ -10,8 +10,11 @@
     <!-- About Us Section Start -->
     @include('sections.homepage.about-us')
     <!-- About Us Section end -->
+    <!--Mission Vision and Mission -->
+    @include('sections.homepage.mission-vision-goal')
 
     <!-- Services Section Start -->
     @include('sections.homepage.services')
+    @include('sections.homepage.blog')
     <!-- Services Section end -->
 </x-app-layout>

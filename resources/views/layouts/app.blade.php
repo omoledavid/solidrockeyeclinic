@@ -42,7 +42,7 @@
 <div class="preloader">
     <div class="loading-container">
         <div class="loading"></div>
-        <div id="loading-icon"><img src="{{asset('assets/images/favicon.png')}}" alt=""></div>
+        <div id="loading-icon"><img src="{{favicon()}}" alt=""></div>
     </div>
 </div>
 <!-- Preloader End -->

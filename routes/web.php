@@ -17,9 +17,13 @@ Route::middleware('auth')->group(function () {
 Route::controller(SiteController::class)->group(function () {
     Route::get('/', 'home')->name('home');
     Route::get('/about', 'about')->name('about');
+    Route::get('/blog', 'blog')->name('blog');
+    Route::get('/blog/{slug}', 'viewPost')->name('blog.show');
     Route::get('/services', 'services')->name('services');
+    Route::get('/services/{slug}', 'showService')->name('services.show');
     Route::get('/contact', 'contact')->name('contact');
     Route::get('/book-appointment', 'bookAppointment')->name('book-appointment');
+    Route::get('technology', 'technology')->name('technology');
 });
 
 require __DIR__.'/auth.php';

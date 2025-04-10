@@ -12,7 +12,7 @@
 
                     <div class="about-img-2">
                         <figure class="image-anime reveal">
-                            <img src="{{ asset('assets/images/about-us-img-2.jpg')}}" alt="">
+                            <img src="{{ asset('assets/images/frontend/roomtech.png')}}" alt="">
                         </figure>
                     </div>
 
@@ -33,8 +33,11 @@
                     <!-- Section Title Start -->
                     <div class="section-title">
                         <h3 class="wow fadeInUp">about us</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Your Journey</span> to a Better Vision Begins Here</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.25s">The goal of our clinic is to provide friendly, caring eye care and the highest level of general, specialized, and advanced vision treatments. With eye care practices throughout the world..</p>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Your Journey</span> to a Better
+                            Vision Begins Here</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.25s">The goal of our clinic is to provide friendly,
+                            caring eye care and the highest level of general, specialized, and advanced vision
+                            treatments. With eye care practices throughout the world..</p>
                     </div>
                     <!-- Section Title End -->
 
@@ -50,9 +53,11 @@
                     <!-- About Us Body End -->
 
                     <!-- About Us Footer Start -->
-                    <div class="about-us-footer wow fadeInUp" data-wow-delay="0.75s">
-                        <a href="{{route('about')}}" class="btn-default">read more about us</a>
-                    </div>
+                    @if(!Route::is('about'))
+                        <div class="about-us-footer wow fadeInUp" data-wow-delay="0.75s">
+                            <a href="{{route('about')}}" class="btn-default">read more about us</a>
+                        </div>
+                    @endif
                     <!-- About Us Footer End -->
                 </div>
                 <!-- About Content End -->

@@ -3,8 +3,10 @@
         <ul class="navbar-nav mr-auto" id="menu">
             <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="{{route('about')}}">About Us</a></li>
+            <li class="nav-item"><a class="nav-link active" href="{{route('about')}}">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{route('blog')}}">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="{{route('services')}}">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{route('technology')}}">Technology</a></li>
             <li class="nav-item"><a class="nav-link" href="{{route('contact')}}">Contact Us</a></li>
             <li class="nav-item highlighted-menu"><a class="nav-link" href="{{route('book-appointment')}}">book appointment</a></li>
         </ul>

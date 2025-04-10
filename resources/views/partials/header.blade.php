@@ -4,7 +4,7 @@
             <div class="container">
                 <!-- Logo Start -->
                 <a class="navbar-brand" href="{{route('home')}}">
-                    <img width="230px" src="{{asset('assets/images/logo.png')}}" alt="Logo">
+                    <img width="230px" src="{{logo()}}" alt="Logo">
                 </a>
                 <!-- Logo End -->
 

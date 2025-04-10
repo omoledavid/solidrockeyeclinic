@@ -5,98 +5,36 @@
                 <!-- Section Title Start -->
                 <div class="section-title">
                     <h3 class="wow fadeInUp">our services</h3>
-                    <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Hight Quality</span> Services for You.</h2>
-                    <p class="wow fadeInUp" data-wow-delay="0.25s">We are committed to sustainability. eco-friendly initiatives.</p>
+                    <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Hight Quality</span> Services for You.
+                    </h2>
+                    <p class="wow fadeInUp" data-wow-delay="0.25s">We are committed to sustainability. eco-friendly
+                        initiatives.</p>
                 </div>
                 <!-- Section Title End -->
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="{{ asset('assets/images/icon-services-1.svg')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="service-body">
-                        <h3>general eye care</h3>
-                        <p>We are excited to meet you and provide the best eye care for your family.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">read more</a>
-                    </div>
+            @if($services->count())
+                @foreach($services as $service)
+                    <x-solidrock.service-card :$service/>
+                @endforeach
+            @else
+                <div class="col-lg-3 col-md-12">
+                    <p>No service</p>
                 </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp" data-wow-delay="0.25s">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="{{ asset('assets/images/icon-services-1.svg')}}" alt="">
-                        </div>
+            @endif
+            @if($services->count() > 3)
+                <div class="col-lg-12">
+                    <!-- Service Box Footer Start -->
+                    <div class="services-box-footer wow fadeInUp" data-wow-delay="1s">
+                        <p>We believe in using the latest technology and techniques to ensure the best outcomes for our
+                            patients.</p>
+                        <a href="{{route('services')}}" class="btn-default">view all service</a>
                     </div>
-                    <div class="service-body">
-                        <h3>eye implants</h3>
-                        <p>We are excited to meet you and provide the best eye care for your family.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">read more</a>
-                    </div>
+                    <!-- Service Box Footer End -->
                 </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="{{ asset('assets/images/icon-services-1.svg')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="service-body">
-                        <h3>cosmetic Eye</h3>
-                        <p>We are excited to meet you and provide the best eye care for your family.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <!-- Service Item Start -->
-                <div class="service-item wow fadeInUp" data-wow-delay="0.75s">
-                    <div class="icon-box">
-                        <div class="img">
-                            <img src="{{ asset('assets/images/icon-services-1.svg')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="service-body">
-                        <h3>eye cleaning</h3>
-                        <p>We are excited to meet you and provide the best eye care for your family.</p>
-                    </div>
-                    <div class="read-more-btn">
-                        <a href="#">read more</a>
-                    </div>
-                </div>
-                <!-- Service Item End -->
-            </div>
-
-            <div class="col-lg-12">
-                <!-- Service Box Footer Start -->
-                <div class="services-box-footer wow fadeInUp" data-wow-delay="1s">
-                    <p>We believe in using the latest technology and techniques to ensure the best outcomes for our patients.</p>
-                    <a href="{{route('services')}}" class="btn-default">view all service</a>
-                </div>
-                <!-- Service Box Footer End -->
-            </div>
+            @endif
         </div>
     </div>
 
@@ -112,7 +50,8 @@
                             <!-- Section Title Start -->
                             <div class="section-title">
                                 <h3 class="wow fadeInUp">visit clinic</h3>
-                                <h2 class="text-anime-style-2" data-cursor="-opaque">Comprehensive eye Care For All Ages</h2>
+                                <h2 class="text-anime-style-2" data-cursor="-opaque">Comprehensive eye Care For All
+                                    Ages</h2>
                             </div>
                             <!-- Section Title End -->
 

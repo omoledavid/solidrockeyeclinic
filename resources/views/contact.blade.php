@@ -1,6 +1,6 @@
 
 <x-app-layout pageName="{{$pageName}}">
-    <x-head-banner pageName="{{$pageName}}"></x-head-banner>
+    <x-head-banner pageName="{{$pageName}}" :style="true" />
     <!-- Page Contact Start -->
     <div class="page-contact">
         <div class="container">

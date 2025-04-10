@@ -13,7 +13,7 @@
                     <!-- About Footer Content Start -->
                     <div class="about-footer-content">
                         <p>The goal our clinic is provide friendly, caring dentistry and highest level of general,
-                            cosmetic, and specialist dental treatments.</p>
+                            cosmetic, and specialist eye treatments.</p>
                     </div>
                     <!-- About Footer Content End -->
                 </div>

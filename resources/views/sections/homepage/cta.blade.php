@@ -8,7 +8,7 @@
                         <img src="{{ asset('assets/images/icon-cta-phone.svg')}}" alt="">
                     </div>
                     <div class="cta-box-content">
-                        <h3>need dental services ?</h3>
+                        <h3>need eyecare services ?</h3>
                         <p>Call on : (+01) 987 828 745</p>
                     </div>
                 </div>

@@ -1,11 +1,14 @@
-@props(['pageName'])
+@props([
+    'pageName',
+    'style' => false
+    ])
 @php
-    if($pageName == 'About Us')
+    if($style)
         {
             $words = explode(" ", $pageName);
 
-            $firstWord = $words[0]; // "About"
-            $secondWord = $words[1]; // "Us"
+            $firstWord = $words[0] ?? ''; // "About"
+            $secondWord = $words[1] ?? ''; // "Us"
         }
 @endphp
 <div class="page-header">
@@ -15,7 +18,7 @@
                 <!-- Page Header Box Start -->
                 <div class="page-header-box">
                     <h1 class="text-anime-style-2" data-cursor="-opaque">
-                        @if($pageName == 'About Us')
+                        @if($style)
                             <span>{{ $firstWord }}</span> {{ $secondWord }}
                         @else
                             {{ $pageName }}
