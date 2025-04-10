@@ -12,8 +12,7 @@
 
                     <!-- About Footer Content Start -->
                     <div class="about-footer-content">
-                        <p>The goal our clinic is provide friendly, caring dentistry and highest level of general,
-                            cosmetic, and specialist eye treatments.</p>
+                        <p>Our goal is to provide friendly, compassionate care and the highest standard of general, cosmetic, and specialist eye treatments.</p>
                     </div>
                     <!-- About Footer Content End -->
                 </div>
