@@ -1,6 +1,6 @@
 
 <x-app-layout pageName="{{$pageName}}">
-    <x-head-banner pageName="{{$pageName}}" :style="true" />
+    <x-head-banner pageName="{{$pageName}}" :style="true"/>
     <!-- Page Contact Start -->
     <div class="page-contact">
         <div class="container">
@@ -10,8 +10,10 @@
                         <!-- Section Title Start -->
                         <div class="section-title">
                             <h3 class="wow fadeInUp">contact info</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Connecting</span> Near & Far </h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.25s">For emergency eye care or to schedule an appointment, contact our office at visit our clinic.</p>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque"><span>Connecting</span> Near & Far
+                            </h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.25s">For emergency eye care or to schedule an
+                                appointment, contact our office at visit our clinic.</p>
                         </div>
                         <!-- Section Title End -->
 
@@ -30,7 +32,7 @@
                                         <!-- Contact Us Content Start -->
                                         <div class="contact-info-content">
                                             <h3>visit us on</h3>
-                                            <p>24/11 Robert Road , Lagos , Nigeria</p>
+                                            <p>{{$general->address}}</p>
                                         </div>
                                         <!-- Contact Us Content End -->
                                     </div>
@@ -49,8 +51,10 @@
                                         <!-- Contact Us Content Start -->
                                         <div class="contact-info-content">
                                             <h3>contact us</h3>
-                                            <p>(+234) 000 000 000</p>
-                                            <p>(+234) 000 000 000</p>
+                                            <p>{{$general->phone}}</p>
+                                            @if($general->alt_phone)
+                                                <p>{{$general->alt_phone}}</p>
+                                            @endif
                                         </div>
                                         <!-- Contact Us Content End -->
                                     </div>
@@ -89,8 +93,10 @@
                                         <!-- Contact Us Content Start -->
                                         <div class="contact-info-content">
                                             <h3>email us</h3>
-                                            <p>info@solidrockeyecare.com</p>
-                                            <p>sales@solidrockeyecare.com</p>
+                                            <p>{{$general->address}}</p>
+                                            @if($general->alt_address)
+                                                <p>{{$general->alt_address}}</p>
+                                            @endif
                                         </div>
                                         <!-- Contact Us Content End -->
                                     </div>

@@ -52,8 +52,8 @@
                 <div class="footer-links footer-contact-links">
                     <h3>contact us</h3>
                     <ul>
-                        <li><a href="#">info@solidrockeyecare.com</a></li>
-                        <li><a href="#">+(234) 000-0000</a></li>
+                        <li><a href="#">{{$general->email}}</a></li>
+                        <li><a href="#">{{$general->phone}}</a></li>
                     </ul>
                 </div>
                 <!-- Footer Contact Links End -->
@@ -66,7 +66,7 @@
                 <div class="col-lg-12">
                     <!-- Footer Copyright Start -->
                     <div class="footer-copyright-text">
-                        <p>Copyright © 2024 All Rights Reserved.</p>
+                        <p>Copyright © 2025 All Rights Reserved.</p>
                     </div>
                     <!-- Footer Copyright End -->
                 </div>

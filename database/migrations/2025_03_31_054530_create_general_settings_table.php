@@ -17,11 +17,12 @@ return new class extends Migration
             $table->string('logo')->nullable();
             $table->string('dark_logo')->nullable();
             $table->string('favicon')->nullable();
-            $table->string('currency_sym')->default('N')->nullable();
-            $table->string('currency_code')->default('NGN')->nullable();
             $table->text('email')->nullable();
+            $table->text('alt_email')->nullable();
             $table->text('address')->nullable();
+            $table->text('alt_address')->nullable();
             $table->string('phone')->nullable();
+            $table->string('alt_phone')->nullable();
             $table->timestamps();
         });
     }
