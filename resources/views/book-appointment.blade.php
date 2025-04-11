@@ -19,7 +19,8 @@
                     <div class="col-lg-12">
                         <div class="appointment-form wow fadeInUp">
                             <!-- Form Start -->
-                            <form id="appointmentForm" action="#" method="POST" data-toggle="validator">
+                            <form id="appointmentForm" action="{{'appointment'}}" method="POST" data-toggle="validator">
+                                @csrf
                                 <div class="row">
                                     <div class="form-group col-md-6 mb-4">
                                         <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name" required>
@@ -35,9 +36,10 @@
                                         <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
+                                    <input type="hidden" id="url" value="{{route('appointment')}}"/>
 
                                     <div class="form-group col-md-6 mb-4">
-                                        <select name="services" class="form-control form-select" id="services" required>
+                                        <select name="service" class="form-control form-select" id="service" required>
                                             <option value="" disabled selected>Select Service</option>
                                             <option value="general_eye_care">General Eye Care</option>
                                             <option value="vision_correction">Vision Correction</option>

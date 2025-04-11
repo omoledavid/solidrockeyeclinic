@@ -23,7 +23,8 @@ Route::controller(SiteController::class)->group(function () {
     Route::get('/services/{slug}', 'showService')->name('services.show');
     Route::get('/contact', 'contact')->name('contact');
     Route::get('/book-appointment', 'bookAppointment')->name('book-appointment');
-    Route::get('technology', 'technology')->name('technology');
+    Route::post('/appointment', 'appointment')->name('appointment');
+    Route::get('/technology', 'technology')->name('technology');
 });
 
 require __DIR__.'/auth.php';

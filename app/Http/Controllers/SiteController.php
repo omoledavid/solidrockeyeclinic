@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\AppointmenStatus;
+use App\Models\Appointment;
 use App\Models\Hmo;
 use App\Models\Post;
 use App\Models\Service;
@@ -9,7 +11,9 @@ use App\Models\Technology;
 use Firefly\FilamentBlog\Enums\PostStatus;
 use Firefly\FilamentBlog\Models\Category;
 use Firefly\FilamentBlog\Models\Tag;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\View\View;
 
 class SiteController extends Controller
@@ -94,6 +98,30 @@ class SiteController extends Controller
         $services = Service::query()->where('active', true)->where('id', '!=', $service->id)->latest()->get();
         $pageName = 'Services - '.$service->name;
         return view('pages.services.show', compact('pageName', 'service', 'services'));
+    }
+    public function appointment(Request $request): JsonResponse
+    {
+        $validatedData = Validator::make($request->all(), [
+            'name'  => 'required|string|max:255',
+            'email' => 'required|email',
+            'date'  => 'required|date',
+            'phone'  => 'required',
+            'service'  => 'required|string',
+        ]);
+
+        if ($validatedData->fails()) {
+            // Get the first field that failed
+            $firstErrorKey = array_key_first($validatedData->errors()->messages());
+            return response()->json('failed to book appointment :'.$firstErrorKey);
+        }
+
+        // Now get the actual validated data
+        $data = $validatedData->validated();
+        $data['status'] = AppointmenStatus::PENDING;
+
+        Appointment::query()->create($data);
+
+        return response()->json('success');
     }
 
 }
