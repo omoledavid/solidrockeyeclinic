@@ -1,4 +1,4 @@
-@if($services->count())
+@if($posts->count())
     <!-- Our Blog Start -->
     <div class="our-blog">
         <div class="container">

@@ -16,7 +16,7 @@
                                 <!-- company Logo Start -->
                                 <div class="swiper-slide">
                                     <div style="width: 200px" class="company-logo">
-                                        <img src="{{$hmo->logo}}" alt="">
+                                        <img src="{{asset('storage/'.$hmo->logo)}}" alt="">
                                     </div>
                                 </div>
                             @endforeach
