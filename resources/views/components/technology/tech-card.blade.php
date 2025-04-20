@@ -20,7 +20,7 @@
             <!-- Techonology Image Start -->
             <div class="techonology-image-1">
                 <figure class="image-anime reveal">
-                    <img src="{{asset($technology->first_image)}}" alt="">
+                    <img src="{{asset('storage/'.$technology->first_image)}}" alt="">
                 </figure>
             </div>
             <!-- Techonology Image End -->
@@ -28,7 +28,7 @@
             <!-- Techonology Image Start -->
             <div class="techonology-image-2">
                 <figure class="image-anime reveal">
-                    <img src="{{asset($technology->second_image)}}" alt="">
+                    <img src="{{asset('storage/'.$technology->second_image)}}" alt="">
                 </figure>
             </div>
             <!-- Techonology Image End -->
