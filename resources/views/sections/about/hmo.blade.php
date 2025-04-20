@@ -12,12 +12,11 @@
                 <div class="company-carousel">
                     <div class="swiper companies_logo_slider">
                         <div class="swiper-wrapper">
-                            @foreach($hmos as $hmo)
+                            @foreach ($hmos as $hmo)
                                 <!-- company Logo Start -->
                                 <div class="swiper-slide">
-                                    <div style="width: 200px" class="company-logo">
-                                        <img src="{{asset('storage/'.$hmo->logo)}}" alt="">
-                                    </div>
+                                    <div style="background-image: url('{{ asset('storage/' . $hmo->logo) }}'); background-size: contain; background-repeat: no-repeat; background-position: center;"
+                                        class="company-logo"></div>
                                 </div>
                             @endforeach
                             <!-- company Logo End -->
@@ -29,3 +28,17 @@
         </div>
     </div>
 </div>
+<style>
+    .company-logo {
+        width: 200px;
+        height: 77px;
+    }
+
+    @media (max-width: 768px) {
+        .company-logo {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 200 / 77;
+        }
+    }
+</style>
