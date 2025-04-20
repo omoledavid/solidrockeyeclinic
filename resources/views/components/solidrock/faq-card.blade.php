@@ -1,14 +1,14 @@
-@props(['faq'])
 <div class="accordion-item wow fadeInUp">
-    <h2 class="accordion-header" id="heading.{{$faq->id }}">
+    <h2 class="accordion-header" id="heading-{{$faq->id }}">
         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapse.{{$faq->id }}" aria-expanded="{{ $loop->first ? 'true' : 'false' }}" 
-                aria-controls="collapse.{{$faq->id }}">
+                data-bs-target="#collapse-{{$faq->id }}" 
+                aria-expanded="{{ $isFirst ? 'true' : 'false' }}" 
+                aria-controls="collapse-{{$faq->id }}">
             {{ $faq->question }}
         </button>
     </h2>
-    <div id="collapse.{{$faq->id }}" class="accordion-collapse collapse {{ $loop->first ? 'show' : '' }}" 
-         aria-labelledby="heading.{{$faq->id }}" data-bs-parent="#accordion">
+    <div id="collapse-{{$faq->id }}" class="accordion-collapse collapse {{ $isFirst ? 'show' : '' }}" 
+         aria-labelledby="heading-{{$faq->id }}" data-bs-parent="#accordion">
         <div class="accordion-body">
             <p>{{$faq->answer}}</p>
         </div>

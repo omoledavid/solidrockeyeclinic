@@ -36,7 +36,7 @@
                         <!-- Service Featured Image Start -->
                         <div class="service-featured-image">
                             <figure class="reveal image-anime">
-                                <img src="{{ asset('storage/'.$service->image) }}" alt="">
+                                <img src="{{ asset('storage/' . $service->image) }}" alt="">
                             </figure>
                         </div>
                         <!-- Service Featured Image End -->
@@ -58,9 +58,10 @@
                         <!-- FAQ Accordion Start -->
                         <div class="faq-accordion" id="accordion">
                             <!-- FAQ Item Start -->
-                            @foreach ($faqs as $faq)
-                                <x-solidrock.faq-card :$faq/>
+                            @foreach ($faqs as $index => $faq)
+                                <x-solidrock.faq-card :faq="$faq" :isFirst="$index === 0" />
                             @endforeach
+
                             <!-- FAQ Item End -->
                         </div>
                         <!-- FAQ Accordion End -->
