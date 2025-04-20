@@ -23,7 +23,7 @@ class SiteController extends Controller
     {
         $pageName = 'Home';
         $posts = Post::query()->where('status', PostStatus::PUBLISHED)->latest()->limit(3)->get();
-        $services = Service::query()->where('active', true)->latest()->limit(3)->get();
+        $services = Service::query()->where('active', true)->latest()->limit(4)->get();
         return view('home', compact('pageName', 'posts','services'));
     }
 
