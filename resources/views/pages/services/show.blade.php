@@ -36,7 +36,7 @@
                         <!-- Service Featured Image Start -->
                         <div class="service-featured-image">
                             <figure class="reveal image-anime">
-                                <img src="{{ asset($service->image) }}" alt="">
+                                <img src="{{ asset('storage/'.$service->image) }}" alt="">
                             </figure>
                         </div>
                         <!-- Service Featured Image End -->
