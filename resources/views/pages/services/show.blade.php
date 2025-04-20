@@ -9,7 +9,17 @@
                         <!-- Service Categories List Start -->
                         <div class="service-catagery-list wow fadeInUp">
                             <h3>our services</h3>
-                           
+                            <ul>
+                                @if ($services->count())
+                                    @foreach ($services as $serviceS)
+                                        <li><a
+                                                href="{{ route('services.show', $serviceS->slug) }}">{{ $serviceS->name }}</a>
+                                        </li>
+                                    @endforeach
+                                @else
+                                    <li>No Services available right now</li>
+                                @endif
+                            </ul>
                         </div>
                         <!-- Service Categories List End -->
 
