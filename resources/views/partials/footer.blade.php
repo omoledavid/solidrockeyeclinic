@@ -65,6 +65,7 @@
                 <div class="col-lg-12">
                     <!-- Footer Copyright Start -->
                     <div class="footer-copyright-text">
+                        <p>Built and developed by <a href="https://smavotex.com">Smavotex</a>.</p>
                         <p>Copyright © 2025 All Rights Reserved.</p>
                     </div>
                     <!-- Footer Copyright End -->
