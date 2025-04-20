@@ -4,7 +4,7 @@
     <div class="service-item wow fadeInUp">
         <div class="icon-box">
             <div class="img">
-                <img src="{{asset($service->icon)}}" alt="">
+                <img src="{{asset('storage/'.$service->icon)}}" alt="">
             </div>
         </div>
         <div class="service-body">

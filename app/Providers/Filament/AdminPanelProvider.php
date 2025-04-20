@@ -31,6 +31,7 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::hex('#1E84B5'),
             ])
+            ->profile()
             ->brandLogo(whiteLogo())
             ->brandLogoHeight('40px')
             ->favicon(favicon())

@@ -48,10 +48,6 @@ class TechnologyResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('subtitle')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('description')
-                    ->searchable(),
                 Tables\Columns\ImageColumn::make('first_image'),
                 Tables\Columns\ImageColumn::make('second_image'),
                 Tables\Columns\IconColumn::make('status')

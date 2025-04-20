@@ -25,9 +25,12 @@ class FaqResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('question')
                     ->required()
+                    ->columnSpanFull()
                     ->maxLength(191),
-                Forms\Components\TextInput::make('answer')
+                Forms\Components\Textarea::make('answer')
                     ->required()
+                    ->rows(5)
+                    ->columnSpanFull()
                     ->maxLength(191),
             ]);
     }

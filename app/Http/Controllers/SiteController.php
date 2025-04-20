@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Enums\AppointmenStatus;
 use App\Models\Appointment;
+use App\Models\Faq;
 use App\Models\Hmo;
 use App\Models\Post;
 use App\Models\Service;
@@ -97,7 +98,8 @@ class SiteController extends Controller
         $service = Service::query()->where('slug', $slug)->firstOrFail();
         $services = Service::query()->where('active', true)->where('id', '!=', $service->id)->latest()->get();
         $pageName = 'Services - '.$service->name;
-        return view('pages.services.show', compact('pageName', 'service', 'services'));
+        $faqs = Faq::query()->get();
+        return view('pages.services.show', compact('pageName', 'service', 'services','faqs'));
     }
     public function appointment(Request $request): JsonResponse
     {
