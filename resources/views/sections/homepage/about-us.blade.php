@@ -6,7 +6,7 @@
                 <div class="about-image">
                     <div class="about-img-1">
                         <figure class="image-anime reveal">
-                            <img src="{{ asset('assets/images/about-us-img-1.jpg')}}" alt="">
+                            <img src="{{ asset('assets/images/frontend/about-us-001.png')}}" alt="">
                         </figure>
                     </div>
 
