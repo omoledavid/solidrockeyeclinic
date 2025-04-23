@@ -84,7 +84,7 @@
 
                             <!-- Counter Content Start -->
                             <div class="counter-content">
-                                <p>Our team loves eye trivia. Did you know that tooth enamel.</p>
+                                <p>peace of mind, protection, and financial safety net.</p>
                             </div>
                             <!-- Counter Content End -->
                         </div>
@@ -97,13 +97,13 @@
                             <!-- Counter Title Start -->
                             <div class="counter-title">
                                 <h2><span class="counter">02</span>K</h2>
-                                <h3>realized projects</h3>
+                                <h3>Vision Achieved</h3>
                             </div>
                             <!-- Counter Title End -->
 
                             <!-- Counter Content Start -->
                             <div class="counter-content">
-                                <p>Our team loves eye trivia. Did you know that tooth enamel.</p>
+                                <p>Successful treatments restoring sight and enhancing patient eye health.</p>
                             </div>
                             <!-- Counter Content End -->
                         </div>
@@ -115,14 +115,14 @@
                         <div class="counter-item">
                             <!-- Counter Title Start -->
                             <div class="counter-title">
-                                <h2><span class="counter">22</span>K</h2>
+                                <h2><span class="counter">11</span>K</h2>
                                 <h3>happy customers</h3>
                             </div>
                             <!-- Counter Title End -->
 
                             <!-- Counter Content Start -->
                             <div class="counter-content">
-                                <p>Our team loves eye trivia. Did you know that tooth enamel.</p>
+                                <p>Smiling faces, clear vision, and trusted eye care services.</p>
                             </div>
                             <!-- Counter Content End -->
                         </div>
@@ -141,7 +141,7 @@
 
                             <!-- Counter Content Start -->
                             <div class="counter-content">
-                                <p>Our team loves eye trivia. Did you know that tooth enamel.</p>
+                                <p>Skilled professionals providing expert eye care and trusted treatments.</p>
                             </div>
                             <!-- Counter Content End -->
                         </div>

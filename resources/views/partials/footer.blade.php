@@ -24,6 +24,7 @@
                     <h3>quick links</h3>
                     <ul>
                         <li><a href="{{route('home')}}">home</a></li>
+                        <li><a href="{{route('offers')}}">Offers</a></li>
                         <li><a href="{{route('about')}}">about us</a></li>
                         <li><a href="{{route('services')}}">services</a></li>
                         <li><a href="{{route('book-appointment')}}">book apoointment</a></li>

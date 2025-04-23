@@ -125,5 +125,10 @@ class SiteController extends Controller
 
         return response()->json('success');
     }
+    public function offers(): View
+    {
+        $pageName = 'Offers';
+        return view('pages.offers', compact('pageName'));
+    }
 
 }

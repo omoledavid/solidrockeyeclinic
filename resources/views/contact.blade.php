@@ -1,6 +1,5 @@
-
-<x-app-layout pageName="{{$pageName}}">
-    <x-head-banner pageName="{{$pageName}}" :style="true"/>
+<x-app-layout pageName="{{ $pageName }}">
+    <x-head-banner pageName="{{ $pageName }}" :style="true" />
     <!-- Page Contact Start -->
     <div class="page-contact">
         <div class="container">
@@ -25,14 +24,14 @@
                                     <div class="contact-us-item wow fadeInUp">
                                         <!-- Icon Box Start -->
                                         <div class="icon-box">
-                                            <img src="{{asset('assets/images/icon-location.svg')}}" alt="">
+                                            <img src="{{ asset('assets/images/icon-location.svg') }}" alt="">
                                         </div>
                                         <!-- Icon Box End -->
 
                                         <!-- Contact Us Content Start -->
                                         <div class="contact-info-content">
                                             <h3>visit us on</h3>
-                                            <p>{{$general->address}}</p>
+                                            <p>{{ $general->address }}</p>
                                         </div>
                                         <!-- Contact Us Content End -->
                                     </div>
@@ -44,16 +43,16 @@
                                     <div class="contact-us-item wow fadeInUp" data-wow-delay="0.25s">
                                         <!-- Icon Box Start -->
                                         <div class="icon-box">
-                                            <img src="{{asset('assets/images/icon-phone.svg')}}" alt="">
+                                            <img src="{{ asset('assets/images/icon-phone.svg') }}" alt="">
                                         </div>
                                         <!-- Icon Box End -->
 
                                         <!-- Contact Us Content Start -->
                                         <div class="contact-info-content">
                                             <h3>contact us</h3>
-                                            <p>{{$general->phone}}</p>
-                                            @if($general->alt_phone)
-                                                <p>{{$general->alt_phone}}</p>
+                                            <p>{{ $general->phone }}</p>
+                                            @if ($general->alt_phone)
+                                                <p>{{ $general->alt_phone }}</p>
                                             @endif
                                         </div>
                                         <!-- Contact Us Content End -->
@@ -66,15 +65,15 @@
                                     <div class="contact-us-item wow fadeInUp" data-wow-delay="0.5s">
                                         <!-- Icon Box Start -->
                                         <div class="icon-box">
-                                            <img src="{{asset('assets/images/icon-clock.svg')}}" alt="">
+                                            <img src="{{ asset('assets/images/icon-clock.svg') }}" alt="">
                                         </div>
                                         <!-- Icon Box End -->
 
                                         <!-- Contact Us Content Start -->
                                         <div class="contact-info-content">
                                             <h3>working hours</h3>
-                                            <p>Mon to Fri : 10:00 To 6:00</p>
-                                            <p>Sat : 10:00AM To 3:00PM</p>
+                                            <p>Mon to Sat 9:00AM to 5:00PM</p>
+                                            <p>Sun : Based on Appointment</p>
                                         </div>
                                         <!-- Contact Us Content End -->
                                     </div>
@@ -86,16 +85,16 @@
                                     <div class="contact-us-item wow fadeInUp" data-wow-delay="0.75s">
                                         <!-- Icon Box Start -->
                                         <div class="icon-box">
-                                            <img src="{{asset('assets/images/icon-mail.svg')}}" alt="">
+                                            <img src="{{ asset('assets/images/icon-mail.svg') }}" alt="">
                                         </div>
                                         <!-- Icon Box End -->
 
                                         <!-- Contact Us Content Start -->
                                         <div class="contact-info-content">
                                             <h3>email us</h3>
-                                            <p>{{$general->address}}</p>
-                                            @if($general->alt_address)
-                                                <p>{{$general->alt_address}}</p>
+                                            <p>{{ $general->address }}</p>
+                                            @if ($general->alt_address)
+                                                <p>{{ $general->alt_address }}</p>
                                             @endif
                                         </div>
                                         <!-- Contact Us Content End -->
@@ -120,7 +119,7 @@
                     <!-- Contact Us Image Start -->
                     <div class="contact-us-img">
                         <figure class="reveal image-anime">
-                            <img src="{{asset('assets/images/contact-us-img.jpg')}}" alt="">
+                            <img src="{{ asset('assets/images/contact-us-img.jpg') }}" alt="">
                         </figure>
                     </div>
                     <!-- Contact Us Image End -->
@@ -134,25 +133,30 @@
                         </div>
                         <!-- Section Title End -->
 
-                        <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.25s">
+                        <form id="contactForm" action="#" method="POST" data-toggle="validator"
+                            class="wow fadeInUp" data-wow-delay="0.25s">
                             <div class="row">
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Enter Name" required="">
+                                    <input type="text" name="name" class="form-control" id="fullname"
+                                        placeholder="Enter Name" required="">
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" required="">
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        placeholder="Enter Email" required="">
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required="">
+                                    <input type="text" name="phone" class="form-control" id="phone"
+                                        placeholder="Phone Number" required="">
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required="">
+                                    <input type="text" name="subject" class="form-control" id="subject"
+                                        placeholder="Subject" required="">
                                     <div class="help-block with-errors"></div>
                                 </div>
 

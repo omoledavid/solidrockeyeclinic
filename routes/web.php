@@ -25,6 +25,7 @@ Route::controller(SiteController::class)->group(function () {
     Route::get('/book-appointment', 'bookAppointment')->name('book-appointment');
     Route::post('/appointment', 'appointment')->name('appointment');
     Route::get('/technology', 'technology')->name('technology');
+    Route::get('/offers', 'offers')->name('offers');
 });
 
 require __DIR__.'/auth.php';

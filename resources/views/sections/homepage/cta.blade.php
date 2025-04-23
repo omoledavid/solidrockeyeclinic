@@ -23,7 +23,8 @@
                     </div>
                     <div class="cta-box-content">
                         <h3>opening hours</h3>
-                        <p>Mon to Sat 9:00AM to 9:00PM</p>
+                        <p>Mon to Sat 9:00AM to 5:00PM</p>
+                        <p>Sun : Based on Appointment</p>
                     </div>
                 </div>
             </div>
