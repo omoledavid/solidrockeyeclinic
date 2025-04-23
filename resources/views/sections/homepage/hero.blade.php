@@ -19,9 +19,9 @@
                     <!-- Hero Content Body End -->
 
                     <!-- Google Rating Start -->
-                    <div class="google-rating wow fadeInUp" data-wow-delay="0.75s">
+                    {{-- <div class="google-rating wow fadeInUp" data-wow-delay="0.75s">
                         <p class="wow">We are the best at waht we do</p>
-                    </div>
+                    </div> --}}
                     <!-- Google Rating End -->
                 </div>
                 <!-- Hero Content End -->
