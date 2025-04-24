@@ -31,8 +31,7 @@ class TechnologyResource extends Resource
                 Forms\Components\Textarea::make('description')
                     ->rows(5)
                     ->required()
-                    ->columnSpanFull()
-                    ->maxLength(191),
+                    ->columnSpanFull(),
                 Forms\Components\FileUpload::make('first_image')
                 ->label('Image')
                     ->image()
