@@ -43,13 +43,13 @@
                                             <option value="" disabled selected>Select Service</option>
                                             <option value="vision_correction">Vision Correction</option>
                                             <option value="geriatric_eye_care">Geriatric Eye Care</option>
-                                            <option value="laser_eye_surgery">Laser Eye Surgery</option>
                                             <option value="contact_lens_fitting">Contact Lens Fitting</option>
                                             <option value="pediatric_eye_care">Pediatric Eye Care</option>
                                             <option value="advanced_eye_treatment">Advanced Eye Treatment</option>
                                             <option value="dry_eye_treatment">Dry Eye Treatment</option>
                                             <option value="glaucoma_screening">Glaucoma Screening</option>
                                             <option value="cataract_surgery">Cataract Surgery</option>
+                                            <option value="comprehensive_eye_exams">comprehensive eye exams</option>
                                             <option value="general_eye_screening">General Eye Screening for employees, students, etc.</option>
                                             <option value="purchase_of_optical">Purchase of Optical frames and accessories</option>
                                         </select>
