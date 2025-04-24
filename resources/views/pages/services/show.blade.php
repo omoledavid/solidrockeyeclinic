@@ -3,7 +3,7 @@
     <div class="page-service-single">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 order-2 order-lg-1">
                     <!-- Service Sidebar Start -->
                     <div class="service-sidebar">
                         <!-- Service Categories List Start -->
@@ -30,7 +30,7 @@
                     <!-- Service Sidebar End -->
                 </div>
 
-                <div class="col-lg-8">
+                <div class="col-lg-8 order-1 order-lg-2">
                     <!-- Service Single Content Start -->
                     <div class="service-single-content">
                         <!-- Service Featured Image Start -->

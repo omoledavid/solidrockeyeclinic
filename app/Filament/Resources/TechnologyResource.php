@@ -34,9 +34,11 @@ class TechnologyResource extends Resource
                     ->columnSpanFull()
                     ->maxLength(191),
                 Forms\Components\FileUpload::make('first_image')
-                    ->image(),
-                Forms\Components\FileUpload::make('second_image')
-                    ->image(),
+                ->label('Image')
+                    ->image()
+                    ->columnSpanFull(),
+                // Forms\Components\FileUpload::make('second_image')
+                //     ->image(),
                 Forms\Components\Toggle::make('status')
                     ->required(),
             ]);
