@@ -50,8 +50,8 @@ class TechnologyResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('first_image'),
-                Tables\Columns\ImageColumn::make('second_image'),
+                Tables\Columns\ImageColumn::make('first_image')->label('Image'),
+                // Tables\Columns\ImageColumn::make('second_image'),
                 Tables\Columns\IconColumn::make('status')
                     ->boolean(),
                 Tables\Columns\TextColumn::make('created_at')
