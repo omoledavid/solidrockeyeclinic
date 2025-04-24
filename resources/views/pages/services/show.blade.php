@@ -43,7 +43,7 @@
 
                         <!-- Service Entry Content Start -->
                         <div class="service-entry">
-                            {!! $service->content !!}
+                            {!! tiptap_converter()->asHTML($service->content, toc: true, maxDepth: 3) !!}
                         </div>
                         <!-- Service Entry Content End -->
                     </div>
