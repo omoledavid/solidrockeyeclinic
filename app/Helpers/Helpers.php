@@ -20,7 +20,7 @@ function gs($key = null)
 function logo()
 {
     if (Schema::hasTable('general_settings')) {
-        return gs('dark_logo') ? env('APP_URL') . '/storage/' . gs('logo') : asset('assets/images/logo.png');
+        return gs('dark_logo') ? env('APP_URL') . '/storage/' . gs('dark_logo') : asset('assets/images/logo.png');
     }
 
     return asset('assets/images/logo.png');
