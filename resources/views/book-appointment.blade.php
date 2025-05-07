@@ -49,7 +49,7 @@
                                             <option value="dry_eye_treatment">Dry Eye Treatment</option>
                                             <option value="glaucoma_screening">Glaucoma Screening</option>
                                             <option value="cataract_surgery">Cataract Surgery</option>
-                                            <option value="comprehensive_eye_exams">comprehensive eye exams</option>
+                                            <option value="comprehensive_eye_exams">Comprehensive Eye Exams</option>
                                             <option value="general_eye_screening">General Eye Screening for employees, students, etc.</option>
                                             <option value="purchase_of_optical">Purchase of Optical frames and accessories</option>
                                         </select>

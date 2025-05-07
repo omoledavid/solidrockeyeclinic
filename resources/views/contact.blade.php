@@ -92,9 +92,9 @@
                                         <!-- Contact Us Content Start -->
                                         <div class="contact-info-content">
                                             <h3>email us</h3>
-                                            <p>{{ $general->address }}</p>
-                                            @if ($general->alt_address)
-                                                <p>{{ $general->alt_address }}</p>
+                                            <p>{{ $general->email    }}</p>
+                                            @if ($general->alt_email    )
+                                                <p>{{ $general->alt_email    }}</p>
                                             @endif
                                         </div>
                                         <!-- Contact Us Content End -->

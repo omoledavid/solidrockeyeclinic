@@ -27,5 +27,8 @@ Route::controller(SiteController::class)->group(function () {
     Route::get('/technology', 'technology')->name('technology');
     Route::get('/offers', 'offers')->name('offers');
 });
+Route::get('sms', function () {
+    return view('sms');
+})->name('sms');
 
 require __DIR__.'/auth.php';
