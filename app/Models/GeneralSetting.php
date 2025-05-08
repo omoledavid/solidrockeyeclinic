@@ -18,6 +18,7 @@ class GeneralSetting extends Model
         'alt_address',
         'phone',
         'alt_phone',
+        'phone_three',
     ];
     protected static function boot()
     {

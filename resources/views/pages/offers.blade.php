@@ -35,6 +35,44 @@
             </div>
         </div>
     </section>
+    <!-- Offers Slider -->
+    <section class="offers-slider py-5">
+        <div class="container">
+            <div id="offersCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{asset('assets/images/frontend/offer.jpg')}}" class="d-block w-100" alt="Offer 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Special Offer 1</h5>
+                            <p>Details about the first special offer.</p>
+                        </div>
+                    </div>
+                    {{-- <div class="carousel-item">
+                        <img src="/images/offer2.jpg" class="d-block w-100" alt="Offer 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Special Offer 2</h5>
+                            <p>Details about the second special offer.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/offer3.jpg" class="d-block w-100" alt="Offer 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Special Offer 3</h5>
+                            <p>Details about the third special offer.</p>
+                        </div>
+                    </div> --}}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#offersCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#offersCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
     <!-- Call to Action -->
     <section class="cta-section text-center">

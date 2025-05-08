@@ -43,9 +43,11 @@ class GeneralSettingEditor extends Page implements HasForms
                         ->label('Site Alt Email')
                         ->email(),
                     Forms\Components\TextInput::make('phone')
-                        ->label('Site Phone No'),
+                        ->label('Main Phone No'),
                     Forms\Components\TextInput::make('alt_phone')
-                        ->label('Site Alt Phone No'),
+                        ->label('2nd Phone No'),
+                    Forms\Components\TextInput::make('phone_three')
+                        ->label('3rd Phone No'),
                     Forms\Components\Textarea::make('alt_address')
                         ->label('Company Alt Address'),
                     Forms\Components\Textarea::make('address')

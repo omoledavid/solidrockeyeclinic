@@ -54,6 +54,9 @@
                                             @if ($general->alt_phone)
                                                 <p>{{ $general->alt_phone }}</p>
                                             @endif
+                                            @if ($general->phone_three)
+                                                <p>{{ $general->phone_three }}</p>
+                                            @endif
                                         </div>
                                         <!-- Contact Us Content End -->
                                     </div>

@@ -9,7 +9,7 @@
                     </div>
                     <div class="cta-box-content">
                         <h3>need eyecare services ?</h3>
-                        <p>Call on : {{$general->phone}}</p>
+                        <p>Call on : {{$general->phone}}, {{$general->alt_phone}}</p>
                     </div>
                 </div>
             </div>
